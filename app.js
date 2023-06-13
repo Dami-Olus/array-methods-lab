@@ -54,8 +54,6 @@ const firstNameAda = inventors.find((inventor) => inventor.first === 'Ada' )
   a + (b.passed - b.year)
  ,0)
 
- console.log(totalYears)
-
 
 
 const people = [
@@ -72,10 +70,16 @@ const people = [
   'Blake, William'
 ];
 
+
 // Array.prototype.map()
 // 6. Map the people array such that the new array consists of strings with the names formatted as "First Last", e.g., "Becker, Carl" should be mapped to "Carl Becker".
 // Hint: As a start, consider using the String.prototype.split method to "split" the string using ', ' as the separator
 
+const fullName = people.map((person) => 
+   person.split(', ').reverse().join(' ')
+)
+
+console.log(fullName)
 
 
 
