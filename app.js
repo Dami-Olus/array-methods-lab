@@ -161,7 +161,10 @@ const comments = [
 
 const foundComment = comments.find(comment => comment.id === 823423)
 
-console.log(foundComment)
 
 // Array.prototype.findIndex()
 // 11. Find the index of the comment with an id of 123523
+
+const foundIndex = comments.findIndex(comment => comment.id === 123523)
+
+console.log(foundIndex)
