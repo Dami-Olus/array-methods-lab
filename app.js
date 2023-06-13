@@ -115,7 +115,7 @@ const itemCount = data.reduce((a, b) => {
   return a
 }, {});
 
-console.log(itemCount);
+
 
 const devs = [
   { name: "Wes", year: 1988 },
@@ -127,6 +127,13 @@ const devs = [
 // Array.prototype.some()
 // 8. Check if at least one person is 19 or older?
 // Hint: To get today's year, use the getFullYear method of new Date(), i.e., new Date().getFullYear()
+
+const currentYear  = new Date().getFullYear();
+const oldEnough = devs.some((dev) => {
+return currentYear-dev.year>19
+})
+
+
 
 // Array.prototype.every()
 // 9. Check if everyone is 19 or older?
