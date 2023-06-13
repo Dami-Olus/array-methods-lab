@@ -138,6 +138,12 @@ return currentYear-dev.year>19
 // Array.prototype.every()
 // 9. Check if everyone is 19 or older?
 
+const allOldEnough = devs.every((dev) => {
+  return currentYear-dev.year>19
+  })
+  
+  
+
 const comments = [
   { text: "Love this!", id: 523423 },
   { text: "Super good", id: 823423 },
@@ -145,6 +151,10 @@ const comments = [
   { text: "Ramen is my fav food ever", id: 123523 },
   { text: "Nice Nice Nice!", id: 542328 },
 ];
+
+
+
+
 
 // Array.prototype.find()
 // 10. Find the comment with the id of 823423
