@@ -30,19 +30,23 @@ const inventorNames = inventors.map((inventor) => {
   'lastName': inventor.last}
 })
 
-console.log(inventorNames)
+
 
 
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birth date (year property), in ascending order
 
+inventors.sort((a,b) => a.year - b.year)
+
+
+
 
 
 // Array.prototype.find()
 // 4. Find the inventor object with the first name of 'Ada'
-
-
+const firstNameAda = inventors.find((inventor) => inventor.first === 'Ada' )
+ console.log(firstNameAda)
 
 // Array.prototype.reduce()
 // 5. How many years did all the inventors live?
